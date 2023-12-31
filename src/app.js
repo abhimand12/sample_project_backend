@@ -22,6 +22,7 @@ import userRouter from './routes/user.routes.js'
 // now we are using  middle ware  as in form of app.use( )  
 app.use("/api/v1/users",userRouter);
 
+
 // http://localhost:8000/api/v1/users/register   
 
 export{app}
