@@ -3,6 +3,14 @@ import {ApiError} from "../utils/ApiError.js";
 import { User } from "../models/user.model.js";
 import { ApiResponse}  from "../utils/ApiResponse.js";
 
+// app.post('/hello', function (req, res) {
+//     console.log(JSON.stringify(req.body.hiee) + ' yoooooo');
+//     res.send('hello : ' + JSON.stringify(req.body));
+//   });
+const helloworld=asyncHandler(async (req,res)=>{
+    console.log(JSON.stringify(req.body.hiee) + ' yoooooo');
+    res.send('hello : ' + JSON.stringify(req.body));
+});
 const registerUser = asyncHandler( async (req, res) => {
     
 
@@ -47,4 +55,4 @@ const registerUser = asyncHandler( async (req, res) => {
 } );
 
 
-export {registerUser};
+export {registerUser,helloworld};
