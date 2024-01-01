@@ -14,13 +14,14 @@ app.use(cookieParser())
 
 // app.use(express.json()) // for parsing application/json
 // app.use(express.urlencoded({ extended: true }))
-// routes imports
+// // routes imports
 // app.use(express.json())
 import userRouter from './routes/user.routes.js'
 
 // routes declaration
 // now we are using  middle ware  as in form of app.use( )  
-app.use("/api/v1/users",userRouter);
+
+// app.use("/api/v1/users",userRouter);
 
 
 // http://localhost:8000/api/v1/users/register   
